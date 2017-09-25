@@ -34,4 +34,10 @@
 
 -(Mouth*) nextMouth;
 
+-(Eyes *)previousEye;
+
+-(Mouth *)previousMouth;
+
+-(Nose *)previousNose;
+
 @end

@@ -47,16 +47,17 @@
                                 <rect key="frame" x="14" y="104" width="50" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow_left.jpg"/>
+                                <connections>
+                                    <action selector="eyeLeft:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kJ3-sO-vTQ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOc-hy-axL">
-                                <rect key="frame" x="16" y="285" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V18-h9-mB3">
+                                <rect key="frame" x="5" y="412" width="69" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V18-h9-mB3">
-                                <rect key="frame" x="16" y="435" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button" image="arrow_left.jpg"/>
+                                <connections>
+                                    <action selector="mouthLeft:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zhZ-V9-HVS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7p-Bw-gxG">
                                 <rect key="frame" x="276" y="399" width="94" height="100"/>
@@ -72,6 +73,14 @@
                                 <state key="normal" title="Button" image="arrow_right.jpg"/>
                                 <connections>
                                     <action selector="noseRight:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hax-vo-tRi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOc-hy-axL">
+                                <rect key="frame" x="-3" y="262" width="77" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="arrow_left.jpg"/>
+                                <connections>
+                                    <action selector="noseLeft:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="u6W-Se-ZtO"/>
                                 </connections>
                             </button>
                         </subviews>

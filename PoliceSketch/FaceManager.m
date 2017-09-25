@@ -17,7 +17,7 @@
         [self createEyes];
         [self createNose];
         [self createMouth];
-        _currentPosition = 0;
+        self.currentPosition = 0;
     }
     return self;
 }
@@ -50,6 +50,25 @@
     }
     
     
+    
+    return self.eyes[self.currentPosition];
+}
+
+
+//allows scrolling backwards
+-(Eyes *)previousEye{
+    
+    if (self.currentPosition != 0){
+    self.currentPosition -= 1;
+    }
+    
+    if (self.currentPosition == 0){
+        self.currentPosition = self.eyes.count - 1;
+        
+    }
+    
+    
+    
     return self.eyes[self.currentPosition];
 }
 
@@ -64,7 +83,6 @@
     Nose *n5 = [[Nose alloc]initWithNose:@"nose_5.jpg"];
 
     self.nose = @[n1,n2,n3,n4,n5];
-   
 }
 
 -(Nose*)returnDefaultNose{
@@ -81,6 +99,18 @@
     }
     
     return self.nose[self.currentPosition];
+}
+
+-(Nose *)previousNose{
+    if (self.currentPosition != 0){
+    self.currentPosition -= 1;
+    }
+        
+    if (self.currentPosition == 0){
+        self.currentPosition = self.nose.count - 1;
+    }
+   return self.nose[self.currentPosition];
+
 }
 
 
@@ -110,5 +140,22 @@
     
     return self.mouth[self.currentPosition];
 }
+
+
+-(Mouth *)previousMouth{
+    if (self.currentPosition != 0){
+    self.currentPosition -= 1;
+    }
+        
+        
+    if (self.currentPosition == 0){
+        self.currentPosition = self.mouth.count -1;
+    
+    }
+    return self.mouth[self.currentPosition];
+}
+
+
+
 
 @end
